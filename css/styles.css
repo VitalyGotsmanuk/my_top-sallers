@@ -113,6 +113,7 @@ body {
   }
 */
 
+
 /** Base style*/
  
 /* Basic (Mobile) */
@@ -134,47 +135,24 @@ body {
 /* Desktop */
 @media only screen and (min-width: 1200px) {
 	.container{
-		max-width: 1200px;
+		max-width: 1400px;
   }
 }
-
 .section{
 	padding-bottom: 72px;
 }
+@media only screen and (min-width: 768px) {
+	.section{
+		padding-bottom: 100px;
+	}
+}
 @media only screen and (min-width: 1200px) {
 	.section{
-		padding: 120px 0;
+		padding-bottom: 128px;
   }
 }
 
 /* ====== Text Style ====== */
-
-/* .hero-header{
-	display: block;
-	margin: 0px auto;
-	margin-bottom: ; 
-
-	font-size: 36px;
-	font-weight: 700;
-	line-height: 1.11;
-	letter-spacing: 0.02em;
-    color: var(--color-white);
-    text-align: center;
-
-	max-width: 320px;
-} */
-
-/* @media only screen and (min-width: 768px) {
-	.hero-header{
-		margin-bottom: 36px;
-
-		font-size: 56px;
-		font-weight: 700;
-		line-height: 1.07;
-
-		max-width: 496px;
-  }
-} */
 
 .section-header{
 	height: auto;
@@ -193,7 +171,12 @@ body {
 }
 .section-header .accent {
 	color: var(--color-orange);
-
+}
+@media only screen and (min-width: 768px) {
+	.section-header{
+		font-size: 24px;
+		margin-bottom: 50px;
+  }
 }
 
 .top-sallers-txt {
@@ -209,11 +192,15 @@ body {
 	color: var(--color-black);
 	margin-bottom: 32px;
 }
+
 @media only screen and (min-width: 1200px) {
 	.text-body{
 
    }
 }
+
+
+
 .top-sallers-list{
 	display: flex;
 	flex-wrap: wrap;
@@ -228,9 +215,12 @@ body {
 .top-sallers-item .pict{
 	border-radius: 15px;
 	margin-bottom: 20px
-	
 }
-
+@media only screen and (min-width: 768px) {
+	.top-sallers-item .pict{
+		margin-bottom: 32px;
+  }
+}
 
 
 .button{
@@ -242,7 +232,6 @@ body {
 	padding: 12px 28px;
 	border-style: none;
 	border-radius: 100px;
-	/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 
 	background-color: var(--color-orange);
 	color: var(--color-butn-white);
@@ -263,8 +252,29 @@ body {
 	color: var(--color-orange);
 }
 
+@media only screen and (min-width: 768px) {
+	.button{
+		position: ;
+
+		min-width: 162px;
+		min-height: 50px;
+		padding: 14px 40px;
+		font-size: 18px;
+
+		justify-self: right;
+
+
+
+
+  }
+}
+
+
 
 /* ====  ======== ====*/
+
+
+
 
 
 
