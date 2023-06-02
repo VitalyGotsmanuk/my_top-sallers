@@ -71,19 +71,8 @@ a {
 
 	--color-butn-hover: #FCF1E0;
 	--color-butn-white: #FFFFFF;
-
-	/* Others */
-
-	--anime: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 	
- 	/* --indent-horizontal: 72px;
- 	--indent-vertical: 24px;
- 	--items: 1;
-
-	  */
-
-
 /* = =========================== = */  
 
 body {
@@ -96,60 +85,46 @@ body {
 	letter-spacing: 0.02m;
 }
 
-/**
-|============================
-| Card set
-|============================
 
-.card-set {
-	display: flex;
-	flex-wrap: wrap;
-  
-	row-gap: var(--indent-horizontal);
-	column-gap: var(--indent-vertical);
-  }
-  .card-set-item {
-	flex-basis: calc((100% - var(--indent-vertical) * (var(--items) - 1)) / var(--items));
-  }
-*/
-
-
+/* ===  TOP-SALLERS STYLE === */
 /** Base style*/
  
 /* Basic (Mobile) */
-.container{
+.section-top-sallers{
+	padding-bottom: 72px;
+}
+.container-top-sallers{
 	min-width: 320px;
 	max-width: 375px; 
 	padding: 0 20px;
 	margin: 0 auto;
+
+	position: relative;
 }
-.section{
-	padding-bottom: 72px;
-}
+
 /* Tablet */
 @media only screen and (min-width: 768px) { 
-	.container{
+	.container-top-sallers{
 		max-width: 768px;
 		padding: 0 32px;
  	}
-	.section{
+	.section-top-sallers{
 		padding-bottom: 100px;
 	}
 }
 /* Desktop */
 @media only screen and (min-width: 1200px) {
-	.container{
+	.container-top-sallers{
 		max-width: 1200px;
   	}
-  	.section{
+  	.section-top-sallers{
 		padding-bottom: 128px;
 	}
 }
 
-
 /* ====== Text Style ====== */
 
-.section-header{
+.section-header-top-sallers{
 	height: auto;
 	font-style: normal;
 	font-weight: 600;
@@ -164,11 +139,11 @@ body {
 
 	margin-bottom: 32px;
 }
-.section-header .accent {
+.section-header-top-sallers .accent {
 	color: var(--color-orange);
 }
 @media only screen and (min-width: 768px) {
-	.section-header{
+	.section-header-top-sallers{
 		font-size: 24px;
 		margin-bottom: 50px;
   }
@@ -200,9 +175,6 @@ body {
    }
 }
 
-.container.top-sallers{
-	position: relative;
-}
 
 .top-sallers-list{
 	display: flex;
@@ -237,8 +209,6 @@ body {
 }
 
 
-
-
 .button{
 	display: block;
 	margin: 0px auto;
@@ -260,7 +230,7 @@ body {
 
 	/* Для перехода делаем в основном стиле условия */
 	transition-property: background-color, color;
-	transition: var(--anime);
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus{
@@ -279,11 +249,8 @@ body {
 		min-height: 50px;
 		padding: 14px 40px;
 		font-size: 18px;
-   
-  }
+   	}
 }
-
-
 
 /* ==== ======== ====*/
 
