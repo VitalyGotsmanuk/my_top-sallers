@@ -49,10 +49,10 @@ a {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
   }
-/* ======================== */
+/* =============================== */
 
 
-  /* = Базовы змінні для різних стилів = */  
+/* = Базовы змінні для різних стилів = */  
 :root{
 
 	/* Загальний шрифт */
@@ -123,34 +123,29 @@ body {
 	padding: 0 20px;
 	margin: 0 auto;
 }
-
+.section{
+	padding-bottom: 72px;
+}
 /* Tablet */
 @media only screen and (min-width: 768px) { 
 	.container{
 		max-width: 768px;
 		padding: 0 32px;
  	}
-}
-
-/* Desktop */
-@media only screen and (min-width: 1200px) {
-	.container{
-		max-width: 1400px;
-  }
-}
-.section{
-	padding-bottom: 72px;
-}
-@media only screen and (min-width: 768px) {
 	.section{
 		padding-bottom: 100px;
 	}
 }
+/* Desktop */
 @media only screen and (min-width: 1200px) {
-	.section{
+	.container{
+		max-width: 1400px;
+  	}
+  	.section{
 		padding-bottom: 128px;
-  }
+	}
 }
+
 
 /* ====== Text Style ====== */
 
@@ -194,18 +189,22 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
-	.text-body{
+	.top-sallers-txt{
+		width: 407px;
+		height: auto;
+		margin-bottom: 0;
 
    }
 }
 
-
+.container.top-sallers{
+	position: relative;
+}
 
 .top-sallers-list{
 	display: flex;
 	flex-wrap: wrap;
-	column-gap: 32px;
-	row-gap: 32 px;
+	column-gap: 16px;
 }
 
 .top-sallers-item:last-child{
@@ -218,9 +217,12 @@ body {
 }
 @media only screen and (min-width: 768px) {
 	.top-sallers-item .pict{
+		width: 344px; 
 		margin-bottom: 32px;
   }
 }
+
+
 
 
 .button{
@@ -254,18 +256,16 @@ body {
 
 @media only screen and (min-width: 768px) {
 	.button{
-		position: ;
+		position: absolute;
+
+		top: 574px;
+		right: 32px;
 
 		min-width: 162px;
 		min-height: 50px;
 		padding: 14px 40px;
 		font-size: 18px;
-
-		justify-self: right;
-
-
-
-
+   
   }
 }
 
