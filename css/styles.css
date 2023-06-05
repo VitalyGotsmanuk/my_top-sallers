@@ -10,7 +10,7 @@ h6,
 p  {
 	margin: 0;
 }
-/* == Pict style ДЛя респонсивних зображень == */
+/* == Pict style Для респонсивних зображень == */
 img {
 	display: block;
 	max-width: 100%;
@@ -116,9 +116,11 @@ body {
 @media only screen and (min-width: 1200px) {
 	.container-top-sallers{
 		max-width: 1200px;
+		padding-bottom: 72px;
   	}
   	.section-top-sallers{
 		padding-bottom: 128px;
+		/* padding-bottom: 200px; */
 	}
 }
 
@@ -164,6 +166,11 @@ body {
 	color: var(--color-black);
 	margin-bottom: 32px;
 }
+@media only screen and (min-width: 768px) {
+	.top-sallers-txt{
+		margin-bottom: 0;
+  }
+}
 
 @media only screen and (min-width: 1200px) {
 	.top-sallers-txt{
@@ -171,10 +178,8 @@ body {
 
 		width: 407px;
 		height: auto;
-		margin-bottom: 0;
    }
 }
-
 
 .top-sallers-list{
 	display: flex;
@@ -207,7 +212,6 @@ body {
 		margin-bottom: 32px;
   }
 }
-
 
 .button{
 	display: block;
