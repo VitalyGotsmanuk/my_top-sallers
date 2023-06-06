@@ -19,10 +19,12 @@ img {
 	/* object-fit: cover;
 	object-position: center; */
 }
-button {
-	cursor: pointer; /* Всі кнопки мають властивість  pointer*/ 
+/* button {
+	/* Всі кнопки мають властивість  pointer
+	
+	cursor: pointer;  
 	border: none;
-}
+} */
 /* == Drop list style ==*/
 ul, ol {
 	list-style: none;  /*прибрали булети*/
@@ -198,7 +200,6 @@ body {
 @media only screen and (min-width: 1200px) {
 	.top-sallers-item:last-child{
 		display: block;
-
   }
 }
 
@@ -208,7 +209,6 @@ body {
 }
 @media only screen and (min-width: 768px) {
 	.top-sallers-item .pict{
-		/* width: 344px;  */
 		margin-bottom: 32px;
   }
 }
@@ -216,6 +216,9 @@ body {
 .buy-now-button{
 	display: block;
 	margin: 0px auto;
+
+	cursor: pointer;  
+	border: none;
 
 	min-width: 120px;
 	min-height: 41px;
@@ -233,7 +236,6 @@ body {
 	line-height: 1.21;
     text-align: center;
 
-	/* Для перехода делаем в основном стиле условия */
 	transition-property: background-color, color;
 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
